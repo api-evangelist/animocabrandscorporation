@@ -1,23 +1,75 @@
 aid: animocabrandscorporation
+
 name: Animocabrandscorporation
-description: 'Animocabrandscorporation is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/694b47ff8f3088ab9288889c/6a5f1e35af94a1ee1537c095_6981887a53fc3077b81748a0_5e5f6b8189c1961e675b3ce52323996d_Static%20page%20open%20graph%20placeholder.jpg
+
+description: 'Animocabrandscorporation, also known as Animoca Brands, is a Hong Kong‑based digital assets leader building, investing, and accelerating impactful technologies and ecosystems across gaming, NFTs, blockchain, AI, and venture capital. The company operates a portfolio of over 600 projects, offers stablecoin and real‑world asset solutions, and provides digital‑asset services for institutions and consumers. It drives future economies through tokenization, metaverse experiences, and innovative web3 infrastructure.'
+
 url: https://raw.githubusercontent.com/api-evangelist/animocabrandscorporation/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Stablecoin
+- Real‑world assets
+- Treasury management
+- Gaming
+- Identity
+- Education
+- Digital assets
+- Web3
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/animocabrandscorporation-llms.txt
+- type: Hosts
+  url: hosts/animocabrandscorporation-hosts.yml
+- type: Vendors
+  url: vendors/animocabrandscorporation-vendors.yml
+- type: TermsOfService
+  url: https://policy.animocabrands.com/terms-of-use-for-apple-platforms
+- type: PrivacyPolicy
+  url: https://policy.animocabrands.com/privacy-policy-website
+- type: Newsroom
+  url: https://www.animocabrands.com/newsroom
+- type: Leadership
+  url: https://www.animocabrands.com/leadership
+- type: DomainSecurity
+  url: security/animocabrandscorporation-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/animocabrandscorporation
+  url: https://www.animocabrands.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
